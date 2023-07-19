@@ -8,6 +8,10 @@
     <script>
 export default {
   name: "ListTarea",
-  data() {},
+  data() {
+    return {
+      nombre: "",
+    };
+  },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <v-card height="400" width="256">
+  <v-card height="800" width="256">
     <v-navigation-drawer permanent>
       <v-list-item>
         <v-list-item-content>
@@ -20,9 +20,13 @@
           <v-list-item-icon> </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-title>
+              {{ item.title }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
+        <logout></logout>
       </v-list>
     </v-navigation-drawer>
   </v-card>
@@ -30,18 +34,21 @@
 
 
 <script>
+import Logout from "../pages/Logout.vue";
 export default {
   name: "Sidebar",
+  components: { Logout },
   data() {
     return {
       items: [
         { title: "Crear Tarea", to: "create_tarea" },
-        { title: "Listar Tarea", to: "list_tarea" },
-        { title: "Listar Tareas Completas", to: "list_all_tarea" },
+        { title: "Listar Tareas Completadas", to: "list_tarea" },
         { title: "Listar Tareas Pendientes", to: "list_pending_tarea" },
+        { title: "Listar Todas las Tareas", to: "list_all_tarea" },
         { title: "Completar Tarea", to: "complete_tarea" },
         { title: "Borrar Tarea", to: "delete_tarea" },
-        { title: "Logout", to: "logout" },
+        { title: "Registrar", to: "form" },
+        { title: "Login", to: "login" },
       ],
     };
   },

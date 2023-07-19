@@ -4,7 +4,7 @@
       <v-col cols="2">
         <Sidebar></Sidebar>
       </v-col>
-      <v-col cols="10">
+      <v-col cols="9">
         <router-view></router-view>
       </v-col>
     </v-row>

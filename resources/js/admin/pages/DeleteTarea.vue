@@ -8,6 +8,10 @@
       <script>
 export default {
   name: "DeleteTarea",
-  data() {},
+  data() {
+    return {
+      nombre: "",
+    };
+  },
 };
 </script>

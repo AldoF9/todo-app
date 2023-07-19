@@ -8,6 +8,10 @@
       <script>
 export default {
   name: "ListPendingTarea",
-  data() {},
+  data() {
+    return {
+      nombre: "",
+    };
+  },
 };
 </script>
